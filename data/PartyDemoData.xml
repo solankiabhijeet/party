@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-facade-xml type="demo">
+    <!-- Test Person -->
+    <learning.party.Party partyId="DEMO_PERSON_1" partyTypeEnumId="PERSON"/>
+    <learning.party.Person partyId="DEMO_PERSON_1" firstName="John" lastName="Doe"/>
+
+    <!-- Test Party Group -->
+    <learning.party.Party partyId="DEMO_GROUP_1" partyTypeEnumId="PARTY_GROUP"/>
+    <learning.party.PartyGroup partyId="DEMO_GROUP_1" groupName="Demo Organization"/>
+
+    <!-- Test Contact Mechs -->
+    <learning.party.ContactMech contactMechId="DEMO_EMAIL_1" contactMechTypeId="EMAIL" infoString="john.doe@example.com"/>
+    <learning.party.ContactMech contactMechId="DEMO_PHONE_1" contactMechTypeId="TELECOM_NUMBER" infoString="555-1234"/>
+
+    <!-- Link Contact Mechs to Person -->
+    <learning.party.PartyContactMech partyId="DEMO_PERSON_1" contactMechId="DEMO_EMAIL_1" fromDate="2026-01-01T00:00:00"/>
+    <learning.party.PartyContactMech partyId="DEMO_PERSON_1" contactMechId="DEMO_PHONE_1" fromDate="2026-01-01T00:00:00"/>
+</entity-facade-xml>
